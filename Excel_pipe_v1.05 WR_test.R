@@ -4,9 +4,6 @@ library(xlsx)
 library(ggplot2)
 
 # Inicializa estructuras
-#mypath <- "C:\\Users\\a212857\\Datos\\05. GBDS\\02. Sales & Pipe\\01. Pipe Followup\\2016\\W00_2016\\W"
-mypath <- "~\\W\\W"
-W <- list()
 fecha.desde <- as.Date("2015/12/31")
 fecha.hasta <- as.Date("2017/01/01")
 
@@ -30,12 +27,6 @@ Mi.Consulta <- function (WX){
 
   #Obtiene la suma de OE de las oportunidades con las condiciones de Status y Closing dates dadas
   return(sum(WX$`Order Entry Total *1000`[lseleccion]))
-}
-
-
-for (i in 1:51){
-    # Carga la excel
-    W[[i]] <- read_excel(paste(mypath, sprintf("%02d", i), ".xlsx", sep=""))
 }
 
 # Aplica la selección común a todos los data-frames y deja cada resultado en una posición del vector
