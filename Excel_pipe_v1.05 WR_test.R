@@ -4,7 +4,8 @@ library(xlsx)
 library(ggplot2)
 
 # Inicializa estructuras
-mypath <- "C:\\Users\\a212857\\Datos\\05. GBDS\\02. Sales & Pipe\\01. Pipe Followup\\2016\\W00_2016\\W"
+#mypath <- "C:\\Users\\a212857\\Datos\\05. GBDS\\02. Sales & Pipe\\01. Pipe Followup\\2016\\W00_2016\\W"
+mypath <- "~\\W\\W"
 W <- list()
 fecha.desde <- as.Date("2015/12/31")
 fecha.hasta <- as.Date("2017/01/01")
