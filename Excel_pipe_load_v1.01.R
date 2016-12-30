@@ -6,7 +6,7 @@ carga <- function (){
   library(xlsx)
 
   # Inicializa estructuras
-  mypath <- "~\\W\\W"
+  mypath <- file.path(getwd(),"W", "W")
   W <- list()
 
   # Carga en memoria la megaestructura "W" como lista de datasets (pipe), uno por semana

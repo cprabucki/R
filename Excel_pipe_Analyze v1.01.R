@@ -46,7 +46,7 @@ analiza <- function(W){
     P <- sapply(W, miConsulta)
     
     # Imprime en consola y en fichero "P.xlxs"
-    #write.xlsx(P, file="C:/Users/a212857/Downloads/P.xlsx")
+    write.xlsx(P, file=file.path(getwd(),"W","P.xlsx"))
     return(P)
     
     #qplot(1:length(P),P, geom="line")
